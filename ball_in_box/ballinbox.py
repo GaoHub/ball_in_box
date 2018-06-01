@@ -19,7 +19,7 @@ def ball_in_box(m, blockers):
         BalloonR=[0]*int(m)
         for j in range(0,int(m)):
             r=0
-            BalloonXPos[j]=random.random()*2-1  //随机生成点
+            BalloonXPos[j]=random.random()*2-1  #随机生成点
             BalloonYPos[j]=random.random()*2-1
             i=0
             while(i<j):
