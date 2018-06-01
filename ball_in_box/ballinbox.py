@@ -4,7 +4,7 @@ import random
 
 __all__ = ['ball_in_box']
 
-def ball_in_box(m, blockers):
+def ball_in_box(m, blockers):   #定义初始化数组
     k=0
     max=0
     circles = []
@@ -46,7 +46,7 @@ def ball_in_box(m, blockers):
                 if(math.sqrt((BalloonXPos[j]-BalloonXPos[i])**2+(BalloonYPos[j]-BalloonYPos[i])**2)-BalloonR[i]<r):
                     r=math.sqrt((BalloonXPos[j]-BalloonXPos[i])**2+(BalloonYPos[j]-BalloonYPos[i])**2)-BalloonR[i]
             BalloonR[j]=r
-            sum=sum+BalloonR[j]**2
+            sum=sum+BalloonR[j]**2  #计算面积总和
         if(sum>max):
             for x in range(m):
                 mBalloonXPos[x]=BalloonXPos[x]
