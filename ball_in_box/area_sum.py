@@ -9,7 +9,7 @@ def area_sum(circles):
 
     return area
 
-if __name__ == '__main__':
+if __name__ == '__main__':   #确定障碍点的位置
     num_of_circle = 5
     blockers = [(0.5, 0.5)
                ,(0.5, -0.3)]
